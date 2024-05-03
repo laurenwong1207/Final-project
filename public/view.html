@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Image and Play Music</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" href="view.css">
+</head>
+<body>
+    <div class="content-container">
+        <div class="image-container">
+            <div class="image-button-container">  <!-- New container for image and button -->
+                <img id="selected-image" src="" alt="Selected Image">
+                <button id="play-button">Play/Pause</button>  <!-- Button is now part of the image container -->
+            </div>
+        </div>
+        <div id="p5-canvas"></div>
+    </div>
+    
+    <script src="view.js"></script>
+</html>

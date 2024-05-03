@@ -1,0 +1,82 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+}
+
+.photo-wall {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+#first-pitch, #last-pitch {
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+.photo-item {
+    position: absolute; /* Change to absolute positioning to properly control image position */
+    border: 2px solid #ddd;
+    transition: transform 0.3s ease-in-out;
+    will-change: transform; /* Hint to the browser to optimize for changes to this property */
+}
+.photo-item img {
+    transition: transform 0.3s ease-in-out; /* Smooth transition effect */
+}
+#photo-wall, .photo-wall {
+    pointer-events: auto;  /* Disable mouse events if the image itself does not require interaction */
+}
+.control-top {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    text-align: center;
+    background-color: #fff; /* Starting color for gradient */
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%); /* Gradient effect */
+    padding: 10px;
+    z-index: 1000;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd; /* Optional: adds a subtle border for depth */
+    transition: transform 0.4s ease-out, box-shadow 0.4s ease; /* Smoother transitions */
+}
+
+/* .control-top:hover {
+    transform: translateY(-5px); /* Hover effect to lift the control bar */
+   /* box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25); /* Increased shadow on hover */
+/*} */
+
+.control-text {
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    color: #000000; /* Change text color for better visibility on dark background */
+    text-shadow: 0 1px 1px rgba(0,0,0,0.2); /* Text shadow for better legibility */
+}
+
+.control-top select {
+    width: 40%;
+    padding: 8px 10px; /* Adjusted padding for better form control sizing */
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners for select box */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.3s ease-in-out; /* Smooth transition for interactions */
+}
+
+.control-top select:hover {
+    background-color: rgba(255, 255, 255, 1); /* Less transparency on hover */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
+}
+
+.control-top select:focus {
+    outline: none; /* Remove focus outline */
+    box-shadow: 0 0 0 2px rgba(98, 0, 238, 0.6); /* Focus shadow like a glow */
+}
+

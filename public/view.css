@@ -1,0 +1,82 @@
+.content-container {
+    display: flex;
+    align-items: center; /* Center align vertically in the viewport */
+    justify-content: center; /* Center align horizontally in the viewport */
+    height: 100vh; /* Use the full height of the viewport */
+    width: 100vw; /* Use the full width of the viewport */
+}
+
+.image-container {
+    flex: 4; /* Takes up 4/10ths of the space */
+    max-width: 30%; /* Maximum width as a percentage of the viewport width */
+    height: 100%; /* Stretch to full height of container */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.image-container img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Keep the aspect ratio */
+    display: block; /* Remove any extra line-height space below image */
+}
+
+.image-button-container {
+    text-align: center; /* Center content horizontally */
+    position: relative; /* Positioned relative to its normal position */
+    padding: 20px; /* Padding around the container */
+}
+
+.image-button-container img {
+    width: 100%; /* Adjust based on design requirement */
+    height: auto;
+    display: block; /* Block display to fit the width */
+}
+
+#play-button {
+    margin-top: 20px; /* Space between the image and the button */
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none; /* Remove outline */
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+
+#play-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.75);
+}
+
+#play-button:active {
+    background-color: #004085;
+    box-shadow: 0 2px 4px rgba(0, 123, 255, 0.75);
+}
+#p5-canvas {
+    flex: 6; /* Takes up 6/10ths of the space */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Stretch to full height of container */
+}
+
+.p5Canvas {
+    /* Assuming the canvas class given by p5.js */
+    max-width: 100%; /* Limit width to prevent overflow */
+    height: auto; /* Adjust height based on the width to maintain aspect ratio */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+    background-color: #121212; /* Dark grey background for the whole page */
+    color: #ffffff; /* Light text for readability */
+    font-family: Arial, sans-serif; /* Ensures consistent font usage */
+}
