@@ -8,7 +8,10 @@ The Node.js server application serves images, MP3 files, and MongoDB data throug
 While walking outside, I heard bird songs that inspired me to create a visualization using only bird sounds. I thought it would be fun to identify different types of bird calls for melody, percussion, and bass. The rhythmic and melodic qualities of bird songs have a soothing effect on the mind that reminds me of Mandela. To capture this, I used a p5 sketch to translate the sounds into circular lines. The aim is to convey the softness and subtlety of bird songs through the nuance of each expanding line. My inspiration for this visual representation also stems from the geometric drawings of therapist Emma Kunz. She used a pendulum to create geometric forms, which aided her patients' healing processes by encouraging meditation.
 
 ## Features
-The user can use a bottom bar to adjust and filter bird sounds based on pitch, tone, and rhythm. Clicking on a bird's photograph will navigate to another page where the sound is visualized. 
+The user can use a bottom bar to adjust and filter bird sounds based on pitch, tone, and rhythm. Clicking on a bird's photograph will navigate to another page where the sound is visualized.
+![drop menu](https://github.com/laurenwong1207/Final-project/assets/128318910/cd07ecd9-c1dc-47f6-b949-4ec3bdf040cc)
+![visualization](https://github.com/laurenwong1207/Final-project/assets/128318910/7dfd14a2-5d8d-4a56-b352-70ffc3dc9d77)
+
 
 ## Process
 ![Web structure](https://github.com/laurenwong1207/Final-project/assets/128318910/dc52aba1-5326-440d-949f-00ef17e2e173)
