@@ -10,6 +10,9 @@ While walking outside, I heard bird songs that inspired me to create a visualiza
 ## Features
 The user can use a bottom bar to adjust and filter bird sounds based on pitch, tone, and rhythm. Clicking on a bird's photograph will navigate to another page where the sound is visualized. 
 
+## Features
+![WechatIMG1530](https://github.com/laurenwong1207/Final-project/assets/128318910/b3808aa3-9e4b-4e09-880b-528aee5ff147)
+
 ## API Reference
 GET /images: Returns a list of all images stored in the public/photos directory.
 
