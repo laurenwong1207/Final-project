@@ -9,6 +9,7 @@ While walking outside, I heard bird songs that inspired me to create a visualiza
 
 ## Features
 The user can use a bottom bar to adjust and filter bird sounds based on pitch, tone, and rhythm. Clicking on a bird's photograph will navigate to another page where the sound is visualized.
+
 ![drop menu](https://github.com/laurenwong1207/Final-project/assets/128318910/cd07ecd9-c1dc-47f6-b949-4ec3bdf040cc)
 ![visualization](https://github.com/laurenwong1207/Final-project/assets/128318910/7dfd14a2-5d8d-4a56-b352-70ffc3dc9d77)
 
