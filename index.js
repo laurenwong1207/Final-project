@@ -12,7 +12,7 @@ const soundsDir = path.join(__dirname, 'public/sound');  // Path to the sounds d
 // Middleware to serve static files
 app.use(express.static('public'));  // Serve static files located in the 'public' directory
 
-const uri = "mongodb+srv://<username>:<password>@<cluster-address>/?retryWrites=true&w=majority&appName=Cluster0"; // MongoDB connection URI
+const uri = "mongodb+srv://laurenwong1207:lLZsUSZMuAZKvXwd@cluster0.nf9e48z.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"; // MongoDB connection URI
 
 // Create a MongoClient with options
 const client = new MongoClient(uri, {
