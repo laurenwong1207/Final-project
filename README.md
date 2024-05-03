@@ -10,8 +10,10 @@ While walking outside, I heard bird songs that inspired me to create a visualiza
 ## Features
 The user can use a bottom bar to adjust and filter bird sounds based on pitch, tone, and rhythm. Clicking on a bird's photograph will navigate to another page where the sound is visualized. 
 
-## Features
-![WechatIMG1530](https://github.com/laurenwong1207/Final-project/assets/128318910/b3808aa3-9e4b-4e09-880b-528aee5ff147)
+## Process
+![Web structure](https://github.com/laurenwong1207/Final-project/assets/128318910/dc52aba1-5326-440d-949f-00ef17e2e173)
+When a user enters the scripts.js page, it sends a request to index.js for all image file paths and all music file paths to display all bird images. Upon selecting an option from the dropdown menu, script.js requests all categories and corresponding image names for the selected classification method from index.js. Subsequently, script.js filters the images to be displayed based on the position of the slider. 
+When a user clicks on any image, script.js uses window.location.href to navigate to the view.html page, appending the image and sound names. view.js then reads and displays the image and plays the corresponding music.
 
 ## API Reference
 GET /images: Returns a list of all images stored in the public/photos directory.
