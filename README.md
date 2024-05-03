@@ -15,6 +15,9 @@ The user can use a bottom bar to adjust and filter bird sounds based on pitch, t
 When a user enters the scripts.js page, it sends a request to index.js for all image file paths and all music file paths to display all bird images. Upon selecting an option from the dropdown menu, script.js requests all categories and corresponding image names for the selected classification method from index.js. Subsequently, script.js filters the images to be displayed based on the position of the slider. 
 When a user clicks on any image, script.js uses window.location.href to navigate to the view.html page, appending the image and sound names. view.js then reads and displays the image and plays the corresponding music.
 
+In new p5(), the setup method sets up audio spectrum analysis with p.fft, and initializes the amplitude object with p.amp. 
+The draw method renders music visualization in real-time by adjusting line length and direction based on volume and spectrum data. Symmetric visual effects are created using rotation and scaling.
+
 ## API Reference
 GET /images: Returns a list of all images stored in the public/photos directory.
 
